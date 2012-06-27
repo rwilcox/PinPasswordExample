@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0800F5B4159B983700E74BC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0800F5B3159B983700E74BC9 /* Cocoa.framework */; };
+		0800F5BE159B983700E74BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5BC159B983700E74BC9 /* InfoPlist.strings */; };
+		0800F5C0159B983700E74BC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5BF159B983700E74BC9 /* main.m */; };
+		0800F5C4159B983700E74BC9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5C2159B983700E74BC9 /* Credits.rtf */; };
+		0800F5C7159B983700E74BC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5C6159B983700E74BC9 /* AppDelegate.m */; };
+		0800F5CA159B983700E74BC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5C8159B983700E74BC9 /* MainMenu.xib */; };
+		0800F5D2159B983700E74BC9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0800F5D1159B983700E74BC9 /* SenTestingKit.framework */; };
+		0800F5D3159B983700E74BC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0800F5B3159B983700E74BC9 /* Cocoa.framework */; };
+		0800F5DB159B983700E74BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5D9159B983700E74BC9 /* InfoPlist.strings */; };
+		0800F5DE159B983700E74BC9 /* PinPasswordExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5DD159B983700E74BC9 /* PinPasswordExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0800F5D4159B983700E74BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0800F5A6159B983700E74BC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0800F5AE159B983700E74BC9;
+			remoteInfo = PinPasswordExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0800F5AF159B983700E74BC9 /* PinPasswordExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPasswordExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0800F5B3159B983700E74BC9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0800F5B6159B983700E74BC9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0800F5B7159B983700E74BC9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0800F5B8159B983700E74BC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0800F5BB159B983700E74BC9 /* PinPasswordExample-Info.plist */ = {isa = PBXFileReference; path = "PinPasswordExample-Info.plist"; sourceTree = "<group>"; };
+		0800F5BD159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0800F5BF159B983700E74BC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0800F5C1159B983700E74BC9 /* PinPasswordExample-Prefix.pch */ = {isa = PBXFileReference; path = "PinPasswordExample-Prefix.pch"; sourceTree = "<group>"; };
+		0800F5C3159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0800F5C5159B983700E74BC9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0800F5C6159B983700E74BC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0800F5C9159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0800F5D0159B983700E74BC9 /* PinPasswordExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinPasswordExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0800F5D1159B983700E74BC9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0800F5D8159B983700E74BC9 /* PinPasswordExampleTests-Info.plist */ = {isa = PBXFileReference; path = "PinPasswordExampleTests-Info.plist"; sourceTree = "<group>"; };
+		0800F5DA159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0800F5DC159B983700E74BC9 /* PinPasswordExampleTests.h */ = {isa = PBXFileReference; path = PinPasswordExampleTests.h; sourceTree = "<group>"; };
+		0800F5DD159B983700E74BC9 /* PinPasswordExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinPasswordExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0800F5AC159B983700E74BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0800F5B4159B983700E74BC9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0800F5CC159B983700E74BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0800F5D2159B983700E74BC9 /* SenTestingKit.framework in Frameworks */,
+				0800F5D3159B983700E74BC9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0800F5A4159B983700E74BC9 = {
+			isa = PBXGroup;
+			children = (
+				0800F5B9159B983700E74BC9 /* PinPasswordExample */,
+				0800F5D6159B983700E74BC9 /* PinPasswordExampleTests */,
+				0800F5B2159B983700E74BC9 /* Frameworks */,
+				0800F5B0159B983700E74BC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0800F5B0159B983700E74BC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5AF159B983700E74BC9 /* PinPasswordExample.app */,
+				0800F5D0159B983700E74BC9 /* PinPasswordExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0800F5B2159B983700E74BC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5B3159B983700E74BC9 /* Cocoa.framework */,
+				0800F5D1159B983700E74BC9 /* SenTestingKit.framework */,
+				0800F5B5159B983700E74BC9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0800F5B5159B983700E74BC9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5B6159B983700E74BC9 /* AppKit.framework */,
+				0800F5B7159B983700E74BC9 /* CoreData.framework */,
+				0800F5B8159B983700E74BC9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0800F5B9159B983700E74BC9 /* PinPasswordExample */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5C5159B983700E74BC9 /* AppDelegate.h */,
+				0800F5C6159B983700E74BC9 /* AppDelegate.m */,
+				0800F5C8159B983700E74BC9 /* MainMenu.xib */,
+				0800F5BA159B983700E74BC9 /* Supporting Files */,
+			);
+			path = PinPasswordExample;
+			sourceTree = "<group>";
+		};
+		0800F5BA159B983700E74BC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5BB159B983700E74BC9 /* PinPasswordExample-Info.plist */,
+				0800F5BC159B983700E74BC9 /* InfoPlist.strings */,
+				0800F5BF159B983700E74BC9 /* main.m */,
+				0800F5C1159B983700E74BC9 /* PinPasswordExample-Prefix.pch */,
+				0800F5C2159B983700E74BC9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0800F5D6159B983700E74BC9 /* PinPasswordExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5DC159B983700E74BC9 /* PinPasswordExampleTests.h */,
+				0800F5DD159B983700E74BC9 /* PinPasswordExampleTests.m */,
+				0800F5D7159B983700E74BC9 /* Supporting Files */,
+			);
+			path = PinPasswordExampleTests;
+			sourceTree = "<group>";
+		};
+		0800F5D7159B983700E74BC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0800F5D8159B983700E74BC9 /* PinPasswordExampleTests-Info.plist */,
+				0800F5D9159B983700E74BC9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0800F5AE159B983700E74BC9 /* PinPasswordExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0800F5E1159B983800E74BC9 /* Build configuration list for PBXNativeTarget "PinPasswordExample" */;
+			buildPhases = (
+				0800F5AB159B983700E74BC9 /* Sources */,
+				0800F5AC159B983700E74BC9 /* Frameworks */,
+				0800F5AD159B983700E74BC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinPasswordExample;
+			productName = PinPasswordExample;
+			productReference = 0800F5AF159B983700E74BC9 /* PinPasswordExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0800F5CF159B983700E74BC9 /* PinPasswordExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0800F5E4159B983800E74BC9 /* Build configuration list for PBXNativeTarget "PinPasswordExampleTests" */;
+			buildPhases = (
+				0800F5CB159B983700E74BC9 /* Sources */,
+				0800F5CC159B983700E74BC9 /* Frameworks */,
+				0800F5CD159B983700E74BC9 /* Resources */,
+				0800F5CE159B983700E74BC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0800F5D5159B983700E74BC9 /* PBXTargetDependency */,
+			);
+			name = PinPasswordExampleTests;
+			productName = PinPasswordExampleTests;
+			productReference = 0800F5D0159B983700E74BC9 /* PinPasswordExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0800F5A6159B983700E74BC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Wilcox Development Solutions";
+			};
+			buildConfigurationList = 0800F5A9159B983700E74BC9 /* Build configuration list for PBXProject "PinPasswordExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0800F5A4159B983700E74BC9;
+			productRefGroup = 0800F5B0159B983700E74BC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0800F5AE159B983700E74BC9 /* PinPasswordExample */,
+				0800F5CF159B983700E74BC9 /* PinPasswordExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0800F5AD159B983700E74BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0800F5BE159B983700E74BC9 /* InfoPlist.strings in Resources */,
+				0800F5C4159B983700E74BC9 /* Credits.rtf in Resources */,
+				0800F5CA159B983700E74BC9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0800F5CD159B983700E74BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0800F5DB159B983700E74BC9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0800F5CE159B983700E74BC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0800F5AB159B983700E74BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0800F5C0159B983700E74BC9 /* main.m in Sources */,
+				0800F5C7159B983700E74BC9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0800F5CB159B983700E74BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0800F5DE159B983700E74BC9 /* PinPasswordExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0800F5D5159B983700E74BC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0800F5AE159B983700E74BC9 /* PinPasswordExample */;
+			targetProxy = 0800F5D4159B983700E74BC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0800F5BC159B983700E74BC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0800F5BD159B983700E74BC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0800F5C2159B983700E74BC9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0800F5C3159B983700E74BC9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0800F5C8159B983700E74BC9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0800F5C9159B983700E74BC9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0800F5D9159B983700E74BC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0800F5DA159B983700E74BC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0800F5DF159B983800E74BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0800F5E0159B983800E74BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0800F5E2159B983800E74BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinPasswordExample/PinPasswordExample-Prefix.pch";
+				INFOPLIST_FILE = "PinPasswordExample/PinPasswordExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0800F5E3159B983800E74BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinPasswordExample/PinPasswordExample-Prefix.pch";
+				INFOPLIST_FILE = "PinPasswordExample/PinPasswordExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0800F5E5159B983800E74BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PinPasswordExample.app/Contents/MacOS/PinPasswordExample";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinPasswordExample/PinPasswordExample-Prefix.pch";
+				INFOPLIST_FILE = "PinPasswordExampleTests/PinPasswordExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0800F5E6159B983800E74BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PinPasswordExample.app/Contents/MacOS/PinPasswordExample";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinPasswordExample/PinPasswordExample-Prefix.pch";
+				INFOPLIST_FILE = "PinPasswordExampleTests/PinPasswordExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0800F5A9159B983700E74BC9 /* Build configuration list for PBXProject "PinPasswordExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0800F5DF159B983800E74BC9 /* Debug */,
+				0800F5E0159B983800E74BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0800F5E1159B983800E74BC9 /* Build configuration list for PBXNativeTarget "PinPasswordExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0800F5E2159B983800E74BC9 /* Debug */,
+				0800F5E3159B983800E74BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0800F5E4159B983800E74BC9 /* Build configuration list for PBXNativeTarget "PinPasswordExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0800F5E5159B983800E74BC9 /* Debug */,
+				0800F5E6159B983800E74BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0800F5A6159B983700E74BC9 /* Project object */;
+}
