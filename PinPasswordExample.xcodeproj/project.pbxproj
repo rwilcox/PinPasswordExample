@@ -17,6 +17,12 @@
 		0800F5D3159B983700E74BC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0800F5B3159B983700E74BC9 /* Cocoa.framework */; };
 		0800F5DB159B983700E74BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5D9159B983700E74BC9 /* InfoPlist.strings */; };
 		0800F5DE159B983700E74BC9 /* PinPasswordExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5DD159B983700E74BC9 /* PinPasswordExampleTests.m */; };
+		0800F5EA159B99F800E74BC9 /* PinPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E8159B99F800E74BC9 /* PinPasswordViewController.m */; };
+		0800F5EB159B99F800E74BC9 /* PinPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E8159B99F800E74BC9 /* PinPasswordViewController.m */; };
+		0800F5EC159B99F800E74BC9 /* PinPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5E9159B99F800E74BC9 /* PinPasswordViewController.xib */; };
+		0800F5ED159B99F800E74BC9 /* PinPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5E9159B99F800E74BC9 /* PinPasswordViewController.xib */; };
+		0800F5F0159B9EE400E74BC9 /* FilteringTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5EF159B9EE400E74BC9 /* FilteringTextField.m */; };
+		0800F5F1159B9EE400E74BC9 /* FilteringTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5EF159B9EE400E74BC9 /* FilteringTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +41,25 @@
 		0800F5B6159B983700E74BC9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0800F5B7159B983700E74BC9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0800F5B8159B983700E74BC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0800F5BB159B983700E74BC9 /* PinPasswordExample-Info.plist */ = {isa = PBXFileReference; path = "PinPasswordExample-Info.plist"; sourceTree = "<group>"; };
+		0800F5BB159B983700E74BC9 /* PinPasswordExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinPasswordExample-Info.plist"; sourceTree = "<group>"; };
 		0800F5BD159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0800F5BF159B983700E74BC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0800F5C1159B983700E74BC9 /* PinPasswordExample-Prefix.pch */ = {isa = PBXFileReference; path = "PinPasswordExample-Prefix.pch"; sourceTree = "<group>"; };
+		0800F5C1159B983700E74BC9 /* PinPasswordExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinPasswordExample-Prefix.pch"; sourceTree = "<group>"; };
 		0800F5C3159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		0800F5C5159B983700E74BC9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0800F5C5159B983700E74BC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0800F5C6159B983700E74BC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0800F5C9159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0800F5D0159B983700E74BC9 /* PinPasswordExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinPasswordExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0800F5D1159B983700E74BC9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0800F5D8159B983700E74BC9 /* PinPasswordExampleTests-Info.plist */ = {isa = PBXFileReference; path = "PinPasswordExampleTests-Info.plist"; sourceTree = "<group>"; };
+		0800F5D8159B983700E74BC9 /* PinPasswordExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinPasswordExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0800F5DA159B983700E74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0800F5DC159B983700E74BC9 /* PinPasswordExampleTests.h */ = {isa = PBXFileReference; path = PinPasswordExampleTests.h; sourceTree = "<group>"; };
+		0800F5DC159B983700E74BC9 /* PinPasswordExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinPasswordExampleTests.h; sourceTree = "<group>"; };
 		0800F5DD159B983700E74BC9 /* PinPasswordExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinPasswordExampleTests.m; sourceTree = "<group>"; };
+		0800F5E7159B99F800E74BC9 /* PinPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinPasswordViewController.h; sourceTree = "<group>"; };
+		0800F5E8159B99F800E74BC9 /* PinPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinPasswordViewController.m; sourceTree = "<group>"; };
+		0800F5E9159B99F800E74BC9 /* PinPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinPasswordViewController.xib; sourceTree = "<group>"; };
+		0800F5EE159B9EE400E74BC9 /* FilteringTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilteringTextField.h; sourceTree = "<group>"; };
+		0800F5EF159B9EE400E74BC9 /* FilteringTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilteringTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +127,12 @@
 			children = (
 				0800F5C5159B983700E74BC9 /* AppDelegate.h */,
 				0800F5C6159B983700E74BC9 /* AppDelegate.m */,
+				0800F5EE159B9EE400E74BC9 /* FilteringTextField.h */,
+				0800F5EF159B9EE400E74BC9 /* FilteringTextField.m */,
 				0800F5C8159B983700E74BC9 /* MainMenu.xib */,
+				0800F5E7159B99F800E74BC9 /* PinPasswordViewController.h */,
+				0800F5E8159B99F800E74BC9 /* PinPasswordViewController.m */,
+				0800F5E9159B99F800E74BC9 /* PinPasswordViewController.xib */,
 				0800F5BA159B983700E74BC9 /* Supporting Files */,
 			);
 			path = PinPasswordExample;
@@ -227,6 +243,7 @@
 				0800F5BE159B983700E74BC9 /* InfoPlist.strings in Resources */,
 				0800F5C4159B983700E74BC9 /* Credits.rtf in Resources */,
 				0800F5CA159B983700E74BC9 /* MainMenu.xib in Resources */,
+				0800F5EC159B99F800E74BC9 /* PinPasswordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0800F5DB159B983700E74BC9 /* InfoPlist.strings in Resources */,
+				0800F5ED159B99F800E74BC9 /* PinPasswordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +281,8 @@
 			files = (
 				0800F5C0159B983700E74BC9 /* main.m in Sources */,
 				0800F5C7159B983700E74BC9 /* AppDelegate.m in Sources */,
+				0800F5EA159B99F800E74BC9 /* PinPasswordViewController.m in Sources */,
+				0800F5F0159B9EE400E74BC9 /* FilteringTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0800F5DE159B983700E74BC9 /* PinPasswordExampleTests.m in Sources */,
+				0800F5EB159B99F800E74BC9 /* PinPasswordViewController.m in Sources */,
+				0800F5F1159B9EE400E74BC9 /* FilteringTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

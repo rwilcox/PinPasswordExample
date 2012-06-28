@@ -7,14 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "PinPasswordViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize pinPasswordDestinationView = _pinPasswordDestinationView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+}
+
+- (void) awakeFromNib {
+    [self.pinPasswordDestinationView addSubview: [PinPasswordViewController pinPasswordViewController].view];
+     
 }
 
 @end
