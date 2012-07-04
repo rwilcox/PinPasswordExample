@@ -10,15 +10,20 @@
 
 @class FilteringTextField;
 
-@interface PinPasswordViewController : NSViewController
+@interface PinPasswordViewController : NSViewController {
+    BOOL isInSecureMode;
+}
 
 +(PinPasswordViewController*) pinPasswordViewController;
 
 @property (strong) IBOutlet FilteringTextField *fieldOne;
 @property (strong) IBOutlet FilteringTextField *fieldTwo;
 @property (strong) IBOutlet FilteringTextField *fieldThree;
+@property (strong) IBOutlet FilteringTextField *fieldFour;
 
 
 - (void) didHitMaxCharactersOf: (FilteringTextField*) maxChars;
+- (IBAction)toggleNumbersShowing:(id)sender;
+- (NSResponder*) preferedFirstResponder;
 
 @end

@@ -17,6 +17,7 @@
 @synthesize fieldOne;
 @synthesize fieldTwo;
 @synthesize fieldThree;
+@synthesize fieldFour;
 
 +(PinPasswordViewController*) pinPasswordViewController {
     PinPasswordViewController* output = [[PinPasswordViewController alloc] 
@@ -29,6 +30,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        isInSecureMode = NO;
         // Initialization code here.
         
     }
@@ -48,10 +50,68 @@
     [fieldThree setMaximumLength: 1];
     [fieldThree setAcceptableCharacterSet: [NSCharacterSet decimalDigitCharacterSet]];
     fieldThree.lengthDelegate = self;
+    
+    [fieldFour setMaximumLength: 1];
+    [fieldFour setAcceptableCharacterSet: [NSCharacterSet decimalDigitCharacterSet]];
+    fieldFour.lengthDelegate = self;
+    
+    //[self.view.window makeFirstResponder: fieldOne];
+
 }
 
 - (void) didHitMaxCharactersOf: (FilteringTextField*) currentField {
     [[currentField nextKeyView] becomeFirstResponder];
 //    [[currentField nextResponder] resignFirstResponder];
+}
+
+- (IBAction)toggleNumbersShowing:(id)sender {
+
+    NSArray* fieldArrays = [NSArray arrayWithObjects: fieldOne, fieldTwo, fieldThree, fieldFour, nil];
+    
+    [fieldArrays enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self _toggleFieldLookFor: obj];
+    }];
+    
+    [fieldOne   display];
+    [fieldTwo   display];
+    [fieldThree display];
+    [fieldFour  display];
+  
+    [fieldOne becomeFirstResponder];
+//    [fieldOne setFirstResp
+    
+    isInSecureMode = !isInSecureMode;
+}
+
+- (NSString*) value {
+    NSString* output = [NSString stringWithFormat:@"%@%@%@%@", 
+                        [fieldOne stringValue],
+                        [fieldTwo stringValue],
+                        [fieldThree stringValue],
+                        [fieldFour stringValue]];
+    
+    return output;
+}
+
+- (NSResponder*) preferedFirstResponder {
+    return fieldOne;
+}
+
+- (void) _toggleFieldLookFor: (NSTextField*) textField {
+    NSTextFieldCell* newCell;
+    
+    if (isInSecureMode) {
+        newCell = [[NSTextFieldCell alloc] init];
+    } else {
+        newCell = [[NSSecureTextFieldCell alloc] init];
+    }
+    
+    newCell.editable = YES;
+    newCell.backgroundColor = [NSColor whiteColor];
+    newCell.bezeled = YES;
+    [newCell setStringValue: [textField.cell stringValue]];
+    
+    textField.cell = newCell;
+    [textField needsDisplay];    
 }
 @end

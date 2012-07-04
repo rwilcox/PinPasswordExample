@@ -8,9 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@class PinPasswordViewController;
+
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    PinPasswordViewController* pinPasswordViewController;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSView *pinPasswordDestinationView;
+
+- (IBAction)doButtonPress:(id)sender;
+
 
 @end
