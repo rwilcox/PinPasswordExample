@@ -458,6 +458,7 @@
 				0800F5E3159B983800E74BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0800F5E4159B983800E74BC9 /* Build configuration list for PBXNativeTarget "PinPasswordExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +467,7 @@
 				0800F5E6159B983800E74BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
