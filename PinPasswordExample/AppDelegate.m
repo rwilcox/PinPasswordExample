@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "PinPasswordViewController.h"
-#import "RWViewWithViewController.h"
 #import "FilteringTextField.h"
 @implementation AppDelegate
 
