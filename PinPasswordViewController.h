@@ -7,8 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PinPasswordViewControllerDelegate.h"
 
 @class FilteringTextField;
+@class DKHoverButtonCell;
 
 @interface PinPasswordViewController : NSViewController {
     BOOL isInSecureMode;
@@ -16,11 +18,17 @@
 
 +(PinPasswordViewController*) pinPasswordViewController;
 
+@property (strong) NSObject<PinPasswordViewControllerDelegate>* delegate; // TODO: I actually think this shoud be weak, but crashes
 @property (strong) IBOutlet FilteringTextField *fieldOne;
 @property (strong) IBOutlet FilteringTextField *fieldTwo;
 @property (strong) IBOutlet FilteringTextField *fieldThree;
 @property (strong) IBOutlet FilteringTextField *fieldFour;
+@property (strong) IBOutlet DKHoverButtonCell *passwordHideBtn;
+@property (assign) BOOL hidePasswordHideBtn;
+@property (strong) NSString* labelText;
 
+- (NSString*) value;
+- (void) setValue:(NSString*) value;
 
 - (void) didHitMaxCharactersOf: (FilteringTextField*) maxChars;
 - (IBAction)toggleNumbersShowing:(id)sender;
