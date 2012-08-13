@@ -160,6 +160,24 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     return YES;
 }
 
+// Thanks <http://stackoverflow.com/a/6016504/224334>
+- (BOOL)control:(NSControl *)control textView:(NSTextView *)fieldEditor doCommandBySelector:(SEL)commandSelector
+{
+    BOOL retval = NO;
+    
+    if (commandSelector == @selector(deleteBackward:)) {
+        //if (  [ [fieldEditor string] length ] == 0 ) {
+            NSView* aPreviousView = [control previousKeyView];
+            [aPreviousView becomeFirstResponder];
+
+            //retval = YES; // causes Apple to NOT fire the default enter action
+        //}
+    }
+    
+    //NSLog(@"Selector = %@", NSStringFromSelector( commandSelector ) );
+    
+    return retval;  
+}
 
 - (void) _toggleFieldLookFor: (NSTextField*) textField {
     NSTextFieldCell* newCell;
