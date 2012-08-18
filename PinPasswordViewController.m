@@ -107,6 +107,21 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     isInSecureMode = !isInSecureMode;
 }
 
+
+- (void) disablePinInput {
+    fieldOne.hidden = YES;
+    fieldTwo.hidden = YES;
+    fieldThree.hidden = YES;
+    fieldFour.hidden = YES;
+}
+
+- (void) enablePinInput {
+    fieldOne.hidden = NO;
+    fieldTwo.hidden = NO;
+    fieldThree.hidden = NO;
+    fieldFour.hidden = NO;
+}
+
 - (void) setPinVisbleButtons {
     [passwordHideBtn setImage: [NSImage imageNamed:@"eye-btn.png"] ];			// graphics not included
     [passwordHideBtn setHoverImage: [NSImage imageNamed: @"eye-btn-hover.png"]];

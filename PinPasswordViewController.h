@@ -27,6 +27,9 @@
 @property (assign) BOOL hidePasswordHideBtn;
 @property (strong) NSString* labelText;
 
+- (void) disablePinInput;
+- (void) enablePinInput;
+
 - (NSString*) value;
 - (void) setValue:(NSString*) value;
 
