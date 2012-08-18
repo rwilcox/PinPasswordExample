@@ -60,6 +60,7 @@
 		0800F5E9159B99F800E74BC9 /* PinPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinPasswordViewController.xib; sourceTree = "<group>"; };
 		0800F5EE159B9EE400E74BC9 /* FilteringTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilteringTextField.h; sourceTree = "<group>"; };
 		0800F5EF159B9EE400E74BC9 /* FilteringTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilteringTextField.m; sourceTree = "<group>"; };
+		08E02E5115A617D100F3C1AC /* PinPasswordViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinPasswordViewControllerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 				0800F5C8159B983700E74BC9 /* MainMenu.xib */,
 				0800F5E7159B99F800E74BC9 /* PinPasswordViewController.h */,
 				0800F5E8159B99F800E74BC9 /* PinPasswordViewController.m */,
+				08E02E5115A617D100F3C1AC /* PinPasswordViewControllerDelegate.h */,
 				0800F5E9159B99F800E74BC9 /* PinPasswordViewController.xib */,
 				0800F5BA159B983700E74BC9 /* Supporting Files */,
 			);

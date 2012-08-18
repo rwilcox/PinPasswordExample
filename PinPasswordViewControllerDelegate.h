@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class PinPasswordViewController;
+
 @protocol PinPasswordViewControllerDelegate <NSObject>
+
+- (void) pinPasswordDidChange: (PinPasswordViewController*) pinController;
 
 @end
