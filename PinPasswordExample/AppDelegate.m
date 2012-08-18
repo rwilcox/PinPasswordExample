@@ -22,6 +22,7 @@
 - (void) awakeFromNib {
     pinPasswordViewController = [PinPasswordViewController pinPasswordViewController];
     [self.pinPasswordDestinationView addSubview: pinPasswordViewController.view];
+    pinPasswordViewController.delegate = self;
     
     [self.window performSelector:@selector(makeFirstResponder:) withObject: [pinPasswordViewController preferedFirstResponder] afterDelay:0.0];
     // needed because the system will automagically select the last text field the user has typed into. Which doesn't work for us
@@ -32,5 +33,9 @@
 
 - (IBAction)doButtonPress:(id)sender {
     NSLog(@"the value is %@", [pinPasswordViewController value]);
+}
+
+- (void) pinPasswordDidChange: (PinPasswordViewController*) pinController {
+    NSLog(@"the user change the value in the control. The object is %@", [pinController value]);
 }
 @end
