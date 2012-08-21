@@ -169,8 +169,11 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
 
 - (BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor {
     
-    if (control == fieldFour)
+    if ( (control == fieldFour) && ( [self value].length > 0 ) ) {
+        // if we are on field four AND the user has inputted something
+        // in the pin control
         [self.delegate pinPasswordDidChange: self];
+    }
     
     return YES;
 }
