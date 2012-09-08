@@ -184,12 +184,12 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     BOOL retval = NO;
     
     if (commandSelector == @selector(deleteBackward:)) {
-        //if (  [ [fieldEditor string] length ] == 0 ) {
+        if (  [ [fieldEditor string] length ] == 0 ) {
             NSView* aPreviousView = [control previousKeyView];
             [aPreviousView becomeFirstResponder];
 
             //retval = YES; // causes Apple to NOT fire the default enter action
-        //}
+        }
     }
     
     //NSLog(@"Selector = %@", NSStringFromSelector( commandSelector ) );
