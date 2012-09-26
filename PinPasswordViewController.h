@@ -26,6 +26,8 @@
 @property (strong) IBOutlet DKHoverButtonCell *passwordHideBtn;
 @property (assign) BOOL hidePasswordHideBtn;
 @property (strong) NSString* labelText;
+@property (strong) NSDictionary* nextPasswordControl;
+@property (strong) NSDictionary* previousPasswordControl;
 
 - (void) disablePinInput;
 - (void) enablePinInput;

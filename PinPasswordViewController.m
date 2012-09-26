@@ -24,6 +24,9 @@
 @synthesize hidePasswordHideBtn;
 @synthesize labelText;
 
+@synthesize previousPasswordControl;
+@synthesize nextPasswordControl;
+
 NSString* getStringAtCharacterPosition(NSString* originalString, int index);
 
 NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
@@ -72,13 +75,31 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     
     [passwordHideBtn setHoverImage: [NSImage imageNamed:@"eyetoggle-btn-hover.png"]];
     
+    // Create the previous and next password control dictionaries
+    // Yes, I know about nextKeyView and previousKeyView but they seem to not work
+    // in all use cases for some reason
+    
+    self.previousPasswordControl = [[NSDictionary alloc] initWithObjectsAndKeys:
+            fieldOne, [NSValue valueWithNonretainedObject: fieldTwo],
+            fieldTwo, [NSValue valueWithNonretainedObject: fieldThree],
+            fieldThree, [NSValue valueWithNonretainedObject: fieldFour],
+            nil];
+    
+    self.nextPasswordControl= [[NSDictionary alloc] initWithObjectsAndKeys:
+            fieldTwo, [NSValue valueWithNonretainedObject:fieldOne],
+            fieldThree, [NSValue valueWithNonretainedObject:fieldTwo],
+            fieldFour, [NSValue valueWithNonretainedObject:fieldThree],
+            nil];
+
     //[self.view.window makeFirstResponder: fieldOne];
 
 }
 
 - (void) didHitMaxCharactersOf: (FilteringTextField*) currentField {
-    [[currentField nextKeyView] becomeFirstResponder];
-//    [[currentField nextResponder] resignFirstResponder];
+    NSLog(@"did hit the max characters");
+    NSLog(@"nextKeyView = %@", [currentField nextKeyView] );
+    NSLog(@"next password field for %@", [self _nextFieldFor: currentField]);
+    [[self _nextFieldFor: currentField] becomeFirstResponder]; // see comment above where we construct previousPasswordControl and nextPasswordControl. WD-rpw 09-26-2012
 }
 
 - (IBAction)toggleNumbersShowing:(id)sender {
@@ -168,7 +189,7 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
 }
 
 - (BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor {
-    
+    NSLog(@"textShouldEndEditing");
     if ( (control == fieldFour) && ( [self value].length > 0 ) ) {
         // if we are on field four AND the user has inputted something
         // in the pin control
@@ -185,7 +206,7 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     
     if (commandSelector == @selector(deleteBackward:)) {
         if (  [ [fieldEditor string] length ] == 0 ) {
-            NSView* aPreviousView = [control previousKeyView];
+            NSView* aPreviousView = [self _previousFieldFor: control];
             [aPreviousView becomeFirstResponder];
 
             //retval = YES; // causes Apple to NOT fire the default enter action
@@ -216,5 +237,13 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     
     textField.cell = newCell;
     [textField needsDisplay];    
+}
+
+- (NSView*) _previousFieldFor: (NSView*) current {
+    return [self.previousPasswordControl objectForKey: [NSValue valueWithNonretainedObject: current]];
+}
+
+- (NSView*) _nextFieldFor: (NSView*) current {
+    return [self.nextPasswordControl objectForKey: [NSValue valueWithNonretainedObject: current]];
 }
 @end
