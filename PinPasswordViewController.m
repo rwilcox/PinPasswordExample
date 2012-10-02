@@ -96,10 +96,14 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
 }
 
 - (void) didHitMaxCharactersOf: (FilteringTextField*) currentField {
-    NSLog(@"did hit the max characters");
-    NSLog(@"nextKeyView = %@", [currentField nextKeyView] );
-    NSLog(@"next password field for %@", [self _nextFieldFor: currentField]);
+    //NSLog(@"did hit the max characters");
+    //NSLog(@"nextKeyView = %@", [currentField nextKeyView] );
+    //NSLog(@"next password field for %@", [self _nextFieldFor: currentField]);
     [[self _nextFieldFor: currentField] becomeFirstResponder]; // see comment above where we construct previousPasswordControl and nextPasswordControl. WD-rpw 09-26-2012
+    
+    if ([self _nextFieldFor: currentField] == nil) {
+        [self.delegate pinPasswordDidChange: self];
+    }
 }
 
 - (IBAction)toggleNumbersShowing:(id)sender {
