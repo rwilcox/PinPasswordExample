@@ -73,7 +73,7 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
     [fieldFour setAcceptableCharacterSet: [NSCharacterSet decimalDigitCharacterSet]];
     fieldFour.lengthDelegate = self;
     
-    [passwordHideBtn setHoverImage: [NSImage imageNamed:@"eyetoggle-btn-hover.png"]];
+    [passwordHideBtn setHoverImage: [NSImage imageNamed:@"eyetoggle-btn-hover"]];
     
     // Create the previous and next password control dictionaries
     // Yes, I know about nextKeyView and previousKeyView but they seem to not work
@@ -148,18 +148,18 @@ NSString* getStringAtCharacterPosition(NSString* originalString, int index) {
 }
 
 - (void) setPinVisbleButtons {
-    [passwordHideBtn setImage: [NSImage imageNamed:@"eye-btn.png"] ];			// graphics not included
-    [passwordHideBtn setHoverImage: [NSImage imageNamed: @"eye-btn-hover.png"]];
-    [passwordHideBtn setAlternateImage: [NSImage imageNamed: @"eye-press.png"]];
+    [passwordHideBtn setImage: [NSImage imageNamed:@"eye-btn"] ];			// graphics not included
+    [passwordHideBtn setHoverImage: [NSImage imageNamed: @"eye-btn-hover"]];
+    [passwordHideBtn setAlternateImage: [NSImage imageNamed: @"eye-press"]];
     
     [passwordHideBtn invalidateCache];
     //[passwordHideBtn needsDisplay];
 }
 
 - (void) setPinBullettedButtons {
-    [passwordHideBtn setImage: [NSImage imageNamed:@"eyetoggle-btn.png"] ];
-    [passwordHideBtn setHoverImage: [NSImage imageNamed: @"eyetoggle-btn-hover.png"]];
-    [passwordHideBtn setAlternateImage: [NSImage imageNamed: @"eyetoggle-btn-press.png"]];
+    [passwordHideBtn setImage: [NSImage imageNamed:@"eyetoggle-btn"] ];
+    [passwordHideBtn setHoverImage: [NSImage imageNamed: @"eyetoggle-btn-hover"]];
+    [passwordHideBtn setAlternateImage: [NSImage imageNamed: @"eyetoggle-btn-press"]];
     
     [passwordHideBtn invalidateCache];
     //[passwordHideBtn needsDisplay];
